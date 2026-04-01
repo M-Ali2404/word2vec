@@ -32,6 +32,6 @@ To start
     python main.py
 
 # Similar project I worked on but using C from scratch
-This task was enjoyable and very reminiscent of another project I worked on, while this project allowed Numpy, I worked on creating a Machine learning library from scratch in C, if you like to check it out here 
+This task was enjoyable and very reminiscent of another project I worked on, while this project allowed Numpy, I worked on creating a Machine learning library from scratch in C, if you would like to check it out here 
 
 -> https://github.com/M-Ali2404/Digit_Image-detection-from-scratch-using-C
