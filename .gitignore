@@ -1,0 +1,15 @@
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# Python Cache (Stops those annoying compiled files from uploading)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Mac OS Hidden Files
+.DS_Store
+
+# Editor / IDE (VS Code settings)
+.vscode/
