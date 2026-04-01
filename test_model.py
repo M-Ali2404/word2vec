@@ -17,5 +17,24 @@ class TestWord2VecEngine(unittest.TestCase):
         result = sigmoid(0)
         self.assertEqual(result, 0.5)
 
+    def test_loss_calculation(self):
+        from model import bce_loss
+        loss_good = bce_loss(0.9, 1)
+        loss_bad = bce_loss(0.1, 1)
+        self.assertTrue(loss_bad > loss_good)
+        self.assertTrue(loss_good > 0)
+
+    def test_bce_math(self):
+        from model import bce_loss
+
+        loss_near_perfect = bce_loss(1, 0.999999)
+        self.assertAlmostEqual(loss_near_perfect, 0, places=4)
+
+        loss_terrible = bce_loss(1, 0.0001)
+        self.assertTrue(loss_terrible > 5.0)
+        
+        loss_half = bce_loss(1, 0.5)
+        self.assertAlmostEqual(loss_half, 0.693147, places=5)
+
 if __name__ == "__main__":
     unittest.main()
