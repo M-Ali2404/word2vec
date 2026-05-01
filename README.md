@@ -1,4 +1,4 @@
-# word2vec
+# word2vec no machine learning library
 This code uses the Skip-gram model with negative sampling to learn semantic word embedding
 
 Why Skip-gram and not CBOW?
